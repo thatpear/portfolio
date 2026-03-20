@@ -137,7 +137,7 @@ main h2 {
 
 .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1.5rem;
 }
 
@@ -146,6 +146,7 @@ main h2 {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    aspect-ratio: 1;
 }
 
 .photo:hover {
@@ -155,7 +156,8 @@ main h2 {
 
 .photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     cursor: pointer;
     display: block;
 }
